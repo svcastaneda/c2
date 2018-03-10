@@ -1,10 +1,8 @@
 FROM python:3
 ENV PYTHONUNBUFFERED 1
+ENV C_FORCE_ROOT true
 
-RUN mkdir /config
-ADD ./config/requirements.txt /config/
-RUN pip install -r /config/requirements.txt
-
-RUN mkdir /code
-WORKDIR /code
-ADD ./code /code/
+RUN mkdir /src
+WORKDIR /src
+ADD ./src /src/
+RUN pip install -r requirements.txt
