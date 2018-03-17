@@ -14,7 +14,7 @@ services:
   web:
     build: .
     container_name: dojo-web
-    command: bash -c "python manage.py collectstatic --no-input; python manage.py migrate; gunicorn dojo.wsgi -b 0.0.0.0:8000"
+    command: invoke start
     volumes:
       - ./src:/src
     expose:

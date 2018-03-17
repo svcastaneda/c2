@@ -30,8 +30,23 @@ docker-compose logs db
 
 -------
 
+## Management
+For a full list of management options, start the app, then create a shell into the instance. the following commands:
+```bash
+# In one window
+docker-compose up
+
+# In another window
+docker-compose run web bash
+invoke --list
+```
+
+
+-------
+
 ## Testing
 ```bash
+invoke test
 ```
 
 -------
