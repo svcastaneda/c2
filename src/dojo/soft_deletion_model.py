@@ -2,20 +2,20 @@ from django.db import models
 
 
 class SoftDeletionModel(models.Model):
-  deleted_at = models.DateTimeField(blank=True, null=True)
+    deleted_at = models.DateTimeField(blank=True, null=True)
 
-  objects = SoftDeletionManager()
-  all_objects = SoftDeletionManager(alive_only=False)
+    objects = SoftDeletionManager()
+    all_objects = SoftDeletionManager(alive_only=False)
 
-  class Meta:
-    abstract = True
+    class Meta:
+        abstract = True
 
-  def delete(self):
-    self.deleted_at = timezone.now()
-    self.save()
+    def delete(self):
+        self.deleted_at = timezone.now()
+        self.save()
 
-  def hard_delete(self):
-    super(SoftDeletionModel, self).delete()
+    def hard_delete(self):
+        super(SoftDeletionModel, self).delete()
 
 
 class SoftDeletionManager(models.Manager):
