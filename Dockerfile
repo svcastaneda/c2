@@ -2,7 +2,10 @@ FROM python:3
 ENV PYTHONUNBUFFERED 1
 ENV C_FORCE_ROOT true
 
-RUN mkdir /src
+RUN pip install --disable-pip-version-check pipenv
+
 WORKDIR /src
+ADD ./src/Pipfile* /src/
+RUN pipenv install --system
+
 ADD ./src /src/
-RUN pip install --disable-pip-version-check -r requirements.txt

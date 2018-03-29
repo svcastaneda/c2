@@ -23,7 +23,7 @@ def migrate(ctx):
 
 @task
 def serve(ctx):
-    ctx.run("gunicorn dojo.wsgi -b 0.0.0.0:8000")
+    ctx.run("gunicorn dojo.wsgi -w 2 -b 0.0.0.0:8000 --reload")
 
 
 @task
