@@ -13,12 +13,12 @@ def start(ctx):
 
 @task
 def build(ctx):
-    ctx.run("./manage.py collectstatic --no-input")
+    ctx.run("python manage.py collectstatic --no-input")
 
 
 @task
 def migrate(ctx):
-    ctx.run("./manage.py migrate")
+    ctx.run("python manage.py migrate")
 
 
 @task
@@ -30,7 +30,7 @@ def serve(ctx):
 def load_dev_fixtures(ctx):
     # TODO: Figure out which env var to inform when to load fixtures
     # Check to make sure this isn't being run in production
-    ctx.run("./manage.py loaddata account/fixtures/*")
+    ctx.run("python manage.py loaddata account/fixtures/*")
 
 
 @task
@@ -41,4 +41,3 @@ def format(ctx):
 @task
 def test(ctx):
     format(ctx)
-    # no_uncommitted_changed(ctx)

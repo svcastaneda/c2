@@ -5,7 +5,16 @@
         "**/*.pyc": true,
         "**/__pycache__": true,
     },
+    "python.linting.enabled": true,
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py",
+        "**/site-packages/**/*.py",
+        "**/migrations/**",
+    ],
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
-    "python.linting.enabled": true
+    "python.linting.pep8Path": "pycodestyle",
+    "python.linting.pep8Args": [
+        "--max-line-length=120",
+    ],
 }

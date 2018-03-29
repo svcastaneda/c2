@@ -1,16 +1,16 @@
-# CoderDojoChi
+# CoderDojoChi v2
 
 ## Requirements
 - Docker
 
 ## Installation
-1. Fork this Repo!
-2. Run the following commands changing `USERNAME` to your github username.
+1. Fork this repo.
+2. Run the following commands changing `USERNAME` to your GitHub username.
 
 ```bash
 git clone git@github.com:USERNAME/c2.git && cd c2
 git remote add upstream git@github.com:CoderDojoChi/c2.git
-docker-compose build
+docker-compose up 
 ```
 
 ## Running the App
@@ -28,7 +28,7 @@ docker-compose logs web
 docker-compose logs db
 ```
 
--------
+---
 
 ## Management
 For a full list of management options, start the app, then create a shell into the instance. the following commands:
@@ -41,15 +41,30 @@ docker-compose run web bash
 invoke --list
 ```
 
+## Migrations
+```bash
+# Create migrations
+docker-compose run web python manage.py makemigrations
 
--------
+# Run Migrations
+docker-compose run web python manage.py migrate
+```
+
+---
 
 ## Testing
 ```bash
-invoke test
+# Run all tests
+docker exec -e DJANGO_PRODUCTION=false dojo-web python manage.py test
+
+# Run test for <app>
+docker exec -e DJANGO_PRODUCTION=false dojo-web python manage.py test <app>
+
+# Example for 'account' app
+docker exec -e DJANGO_PRODUCTION=false dojo-web python manage.py test account
 ```
 
--------
+---
 
 ## Deployment
 ```bash

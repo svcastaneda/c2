@@ -20,6 +20,7 @@ class UserAdmin(BaseUserAdmin):
         'last_name',
         'email',
         'gender',
+        'age',
     )
 
     readonly_fields = (
@@ -37,6 +38,7 @@ class UserAdmin(BaseUserAdmin):
                     'last_name',
                     'email',
                     'gender',
+                    'date_of_birth',
                 )
             }
         ),

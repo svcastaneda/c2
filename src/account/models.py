@@ -1,6 +1,9 @@
 import uuid
+
+from django.contrib.auth.models import UserManager as DefaultUserManager
+from django.contrib.auth.models import AbstractUser
 from django.db import models
-from django.contrib.auth.models import UserManager as DefaultUserManager, AbstractUser
+from django.utils import timezone
 
 
 class UserManager(DefaultUserManager):
@@ -12,7 +15,9 @@ class UserManager(DefaultUserManager):
 
 
 class User(AbstractUser):
-    """Model definition for User."""
+    """
+    Stores a single user, related to :model:`account.Gender`.
+    """
 
     objects = UserManager()
 
@@ -30,18 +35,27 @@ class User(AbstractUser):
         null=True,
     )
 
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
-
-    gender = models.ForeignKey(
-        'Gender',
-        on_delete=models.SET_NULL,
-        blank=True,
+    date_of_birth = models.DateField(
         null=True,
+        blank=True,
     )
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
+
+    def age(self, date=timezone.now()):
+        """
+        Returns the age of the User in number of years.
+        Uses current date if `date` not passed.
+        """
+
+        if self.date_of_birth is None:
+            return None
+
+        return date.year - self.date_of_birth.year - (
+            (date.month, date.day) < (self.date_of_birth.month, self.date_of_birth.day)
+        )
+    age.short_description = 'Age'
 
 
 class Gender(models.Model):
