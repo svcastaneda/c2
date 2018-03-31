@@ -1,4 +1,5 @@
 from invoke import task
+import os
 
 
 @task
@@ -7,9 +8,9 @@ def release(ctx):
     load_dev_fixtures(ctx)
 
 
-@task
-def start(ctx):
-    ctx.run("gunicorn dojo.wsgi -w 2 -b 0.0.0.0:8000 --reload")
+@task(help={"port": "Port to use when serving traffic. Defaults to $PORT."})
+def start(ctx, port=os.environ.get("PORT", 8000)):
+    ctx.run(f"gunicorn dojo.wsgi -w 2 -b 0.0.0.0:{port} --reload")
 
 
 @task
