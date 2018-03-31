@@ -9,17 +9,6 @@ def release(ctx):
 
 @task
 def start(ctx):
-    build(ctx)
-    serve(ctx)
-
-
-@task
-def build(ctx):
-    ctx.run("python manage.py collectstatic --no-input")
-
-
-@task
-def serve(ctx):
     ctx.run("gunicorn dojo.wsgi -w 2 -b 0.0.0.0:8000 --reload")
 
 
@@ -33,6 +22,11 @@ def load_dev_fixtures(ctx):
     # TODO: Figure out which env var to inform when to load fixtures
     # Check to make sure this isn't being run in production
     ctx.run("python manage.py loaddata account/fixtures/*")
+
+
+@task
+def collect_static(ctx):
+    ctx.run("python manage.py collectstatic --no-input")
 
 
 @task
