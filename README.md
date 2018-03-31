@@ -10,7 +10,7 @@
 ```bash
 git clone git@github.com:USERNAME/c2.git && cd c2
 git remote add upstream git@github.com:CoderDojoChi/c2.git
-docker-compose up 
+docker-compose up
 ```
 
 ## Running the App

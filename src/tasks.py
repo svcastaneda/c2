@@ -3,19 +3,24 @@ from invoke import task
 
 @task
 def release(ctx):
-    build(ctx)
     migrate(ctx)
     load_dev_fixtures(ctx)
 
 
 @task
 def start(ctx):
-    ctx.run("gunicorn dojo.wsgi -w 2 -b 0.0.0.0:8000 --reload")
+    build(ctx)
+    serve(ctx)
 
 
 @task
 def build(ctx):
     ctx.run("python manage.py collectstatic --no-input")
+
+
+@task
+def serve(ctx):
+    ctx.run("gunicorn dojo.wsgi -w 2 -b 0.0.0.0:8000 --reload")
 
 
 @task

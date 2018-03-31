@@ -15,7 +15,7 @@ services:
     restart: always
     build: .
     container_name: dojo-web
-    command: invoke start
+    command: invoke release start
     volumes:
       - ./src:/src
     expose:
