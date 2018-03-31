@@ -4,6 +4,7 @@ import os
 
 @task
 def release(ctx):
+    collect_static(ctx)
     migrate(ctx)
     load_dev_fixtures(ctx)
 
