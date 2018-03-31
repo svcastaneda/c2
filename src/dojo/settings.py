@@ -26,7 +26,9 @@ SECRET_KEY = '+w%l&s%)b81tp#s-byn)*vc@--^0m6z(4x0l-i9tofv21y4j6l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'coderdojochi-v2.herokuapp.com'
+]
 
 
 # Application definition
