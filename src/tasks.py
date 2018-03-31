@@ -2,13 +2,15 @@ from invoke import task
 
 
 @task
-def start(ctx):
+def release(ctx):
     build(ctx)
     migrate(ctx)
     load_dev_fixtures(ctx)
 
-    # Must be last- this is a long running process
-    serve(ctx)
+
+@task
+def start(ctx):
+    ctx.run("gunicorn dojo.wsgi -w 2 -b 0.0.0.0:8000 --reload")
 
 
 @task
@@ -19,11 +21,6 @@ def build(ctx):
 @task
 def migrate(ctx):
     ctx.run("python manage.py migrate")
-
-
-@task
-def serve(ctx):
-    ctx.run("gunicorn dojo.wsgi -w 2 -b 0.0.0.0:8000 --reload")
 
 
 @task

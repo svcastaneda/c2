@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/c2/src
+    working_directory: ~/c2
     docker:
       - image: circleci/python:3.6.4-stretch-browsers
         environment:
@@ -16,17 +16,15 @@ jobs:
 
       # Restore cache
       - restore_cache:
-          key: deps9-{{ .Branch }}-{{ checksum "./src/Pipfile.lock" }}
+          key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
 
       # Install
       - run:
-          command: |
-            cd ./src
-            pipenv install
+          command: pipenv install
 
       # Save cache
       - save_cache:
-          key: deps9-{{ .Branch }}-{{ checksum "./src/Pipfile.lock" }}
+          key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
           paths:
             - ".venv"
             - "/usr/local/bin"
