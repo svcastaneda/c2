@@ -1,2 +1,2 @@
-release: cd ./src && invoke release
-web: cd ./src && invoke start
+release: cd ./web && invoke release
+web: cd ./web && invoke start

@@ -1,25 +1,15 @@
 version: '3'
 
 services:
-  nginx:
-    image: nginx:1.13-alpine
-    container_name: dojo-nginx
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./src:/src
-      - ./nginx:/etc/nginx/conf.d
-    depends_on:
-      - web
   web:
     restart: always
     build: .
     container_name: dojo-web
     command: invoke release start
     volumes:
-      - ./src:/src
-    expose:
-      - "8000"
+      - ./web:/src
+    ports:
+      - "8000:8000"
     depends_on:
       - db
   db:

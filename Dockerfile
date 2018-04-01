@@ -8,4 +8,4 @@ WORKDIR /src
 ADD ./Pipfile* /src/
 RUN pipenv install --system
 
-ADD ./src /src/
+ADD ./web /src/

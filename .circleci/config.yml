@@ -37,7 +37,7 @@ jobs:
       # Actual tests!
       - run:
           command: |
-            cd ./src
+            cd ./web
             pipenv run "invoke test"
 
       # Store results
