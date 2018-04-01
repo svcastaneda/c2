@@ -3,10 +3,14 @@ jobs:
   build:
     working_directory: ~/c2
     docker:
-      - image: circleci/python:3.6.4-stretch-browsers
+      - image: circleci/python:3.6-browsers
         environment:
           PIPENV_VENV_IN_PROJECT: true
+          DATABASE_URL: postgresql://root@localhost/circle_test?sslmode=disable
       - image: circleci/postgres:10.3-alpine-ram
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
     steps:
 
       # Checkout and set permissions

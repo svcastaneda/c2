@@ -55,13 +55,13 @@ docker-compose run web python manage.py migrate
 ## Testing
 ```bash
 # Run all tests
-docker exec -e DJANGO_PRODUCTION=false dojo-web python manage.py test
+docker-compose run web invoke django-test
 
 # Run test for <app>
-docker exec -e DJANGO_PRODUCTION=false dojo-web python manage.py test <app>
+docker-compose run web invoke django-test <app>
 
 # Example for 'account' app
-docker exec -e DJANGO_PRODUCTION=false dojo-web python manage.py test account
+docker-compose run web invoke django-test account
 ```
 
 ---

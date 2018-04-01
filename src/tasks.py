@@ -36,6 +36,12 @@ def format(ctx):
     ctx.run("autopep8 -iaarj4 --exclude=\"*/migrations/*\" --max-line-length=\"120\" .")
 
 
+@task(help={"app": "Specific app to run tests on. Defaults to all apps."})
+def django_test(ctx, app=''):
+    ctx.run(f"python manage.py test {app}")
+
+
 @task
 def test(ctx):
     format(ctx)
+    django_test(ctx)
