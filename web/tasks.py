@@ -21,9 +21,9 @@ def migrate(ctx):
 
 @task
 def load_dev_fixtures(ctx):
-    # TODO: Figure out which env var to inform when to load fixtures
-    # Check to make sure this isn't being run in production
-    ctx.run("python manage.py loaddata account/fixtures/*")
+    if os.environ.get("ENABLE_FIXTURES", "true") == "true":
+        # Order matters
+        ctx.run("python manage.py loaddata 01-default")
 
 
 @task
@@ -33,7 +33,7 @@ def collect_static(ctx):
 
 @task
 def format(ctx):
-    ctx.run("autopep8 -iaarj4 --exclude=\"*/migrations/*\" --max-line-length=\"120\" .")
+    ctx.run("autopep8 -iaarj4 --exclude=\"**/migrations/*\" --max-line-length=\"120\" .")
 
 
 @task(help={"app": "Specific app to run tests on. Defaults to all apps."})

@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('gender', models.CharField(max_length=255)),
-                ('referered_as', models.CharField(choices=[('F', 'Female'), ('M', 'Male'), ('O', 'Other')], default='F', max_length=1)),
+                ('referred_to_as', models.CharField(choices=[('F', 'Female'), ('M', 'Male'), ('O', 'Other')], default='F', max_length=1)),
             ],
             options={
                 'verbose_name': 'Gender',

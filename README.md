@@ -8,8 +8,20 @@
 2. Run the following commands changing `USERNAME` to your GitHub username.
 
 ```bash
-git clone git@github.com:USERNAME/c2.git && cd c2
+# Clone forked repo
+git clone git@github.com:USERNAME/c2.git
+
+# Go into project repository
+cd c2
+
+# Add upstream remote
 git remote add upstream git@github.com:CoderDojoChi/c2.git
+
+# Disable push for upstream
+git remote set-url --push upstream DISABLE
+
+# Build and run docker
+docker-compose build
 docker-compose up
 ```
 
@@ -23,15 +35,20 @@ docker-compose up
 docker-compose up -d
 
 # Attaching a log output to already-running process
-docker-compose logs nginx
 docker-compose logs web
 docker-compose logs db
 ```
+
+Load the website via [localhost:8000](http://localhost:8000) and going to [/admin/](http://localhost:8000/admin). The debug admin login info is:
+
+Username: **admin@admin.com**\
+Password: **coderdojochi**
 
 ---
 
 ## Management
 For a full list of management options, start the app, then create a shell into the instance. the following commands:
+
 ```bash
 # In one window
 docker-compose up

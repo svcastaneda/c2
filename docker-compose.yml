@@ -4,6 +4,7 @@ services:
   web:
     restart: always
     build: .
+    env_file: .env
     container_name: dojo-web
     command: invoke release start
     volumes:

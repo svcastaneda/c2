@@ -9,7 +9,7 @@ class GenderModelTest(TestCase):
     def test_string_representation(self):
         gender = Gender(
             gender="Male",
-            referered_as="Male"
+            referred_to_as="Male"
         )
 
         self.assertEqual(

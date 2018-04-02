@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+w%l&s%)b81tp#s-byn)*vc@--^0m6z(4x0l-i9tofv21y4j6l'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,7 +42,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'account'
+
+    # installed apps
+    'address',
+
+    # project apps
+    'account',
+    'location',
 ]
 
 MIDDLEWARE = [
@@ -84,6 +90,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'coderdojochi.wsgi.application'
+
+
+# Google API key for django-address
+GOOGLE_API_KEY = os.environ['GOOGLE_API_KEY']
 
 
 # Database

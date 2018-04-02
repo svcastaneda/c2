@@ -3,7 +3,10 @@ import uuid
 from django.contrib.auth.models import UserManager as DefaultUserManager
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.db.models import Q
 from django.utils import timezone
+
+from location.models import Location
 
 
 class UserManager(DefaultUserManager):
@@ -40,6 +43,14 @@ class User(AbstractUser):
         blank=True,
     )
 
+    address = models.ManyToManyField(
+        Location,
+        limit_choices_to=(
+            Q(location_type=Location.HOME) | Q(location_type=Location.WORK)
+        ),
+        blank=True,
+    )
+
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
@@ -73,7 +84,8 @@ class Gender(models.Model):
     gender = models.CharField(
         max_length=255
     )
-    referered_as = models.CharField(
+
+    referred_to_as = models.CharField(
         max_length=1,
         choices=REFERRED_AS_CHOICES,
         default=FEMALE,

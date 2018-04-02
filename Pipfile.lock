@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e6a959aced7d399745c7832411f0764de46de71184a238a1a1822a64c4a25424"
+            "sha256": "678a600a7e859216fddf28a8c8a07b51cd0968fc668f340d39a65ca5c58d4ac6"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -38,6 +38,10 @@
             ],
             "index": "pypi",
             "version": "==2.0.3"
+        },
+        "django-address": {
+            "git": "git://github.com/karbassi/django-address",
+            "ref": "django-2.x"
         },
         "gunicorn": {
             "hashes": [

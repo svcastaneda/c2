@@ -33,12 +33,16 @@ class UserAdmin(BaseUserAdmin):
         (
             _('Personal info'),
             {
+                'classes': (
+                    'wide',
+                ),
                 'fields': (
                     'first_name',
                     'last_name',
                     'email',
                     'gender',
                     'date_of_birth',
+                    'address',
                 )
             }
         ),
@@ -91,9 +95,9 @@ class GenderAdmin(admin.ModelAdmin):
     list_display = (
         'id',
         'gender',
-        'referered_as',
+        'referred_to_as',
     )
     search_fields = (
         'gender',
-        'referered_as',
+        'referred_to_as',
     )

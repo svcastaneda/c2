@@ -1,0 +1,79 @@
+[
+{
+  "model": "address.country",
+  "pk": 1,
+  "fields": {
+    "name": "United States",
+    "code": "US"
+  }
+},
+{
+  "model": "address.state",
+  "pk": 1,
+  "fields": {
+    "name": "Illinois",
+    "code": "IL",
+    "country": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 1,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60618",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 2,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60647",
+    "state": 1
+  }
+},
+{
+  "model": "address.address",
+  "pk": 1,
+  "fields": {
+    "street_number": "3701",
+    "route": "North Kimball Avenue",
+    "locality": 1,
+    "raw": "3701 North Kimball Avenue, Chicago, IL, USA",
+    "formatted": "3701 N Kimball Ave, Chicago, IL 60618, USA",
+    "latitude": 41.9485247,
+    "longitude": -87.7125472
+  }
+},
+{
+  "model": "address.address",
+  "pk": 2,
+  "fields": {
+    "street_number": "3432",
+    "route": "West Diversey Avenue",
+    "locality": 2,
+    "raw": "3432 West Diversey Avenue, Chicago, IL, USA",
+    "formatted": "3432 W Diversey Ave, Chicago, IL 60647, USA",
+    "latitude": 41.9321361,
+    "longitude": -87.7135739
+  }
+},
+{
+  "model": "location.location",
+  "pk": 1,
+  "fields": {
+    "address": 1,
+    "location_type": "H"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 2,
+  "fields": {
+    "address": 2,
+    "location_type": "W"
+  }
+}
+]
