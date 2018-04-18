@@ -1,3 +1,4 @@
+from django import forms
 from django.contrib import admin
 from django.contrib.auth.admin import (
     UserAdmin as BaseUserAdmin
@@ -9,7 +10,25 @@ from django.utils.translation import (
 from .models import (
     User,
     Gender,
+    Race,
+    Ethnicity,
+    UserRaceEthnicity,
 )
+
+
+class UserRaceEthnicityForm(forms.ModelForm):
+    class Meta:
+        model = UserRaceEthnicity
+        exclude = ['user']
+
+    class Media:
+        js = ("user_race_ethnicities_admin.js",)
+
+
+class UserRaceEthnicityInline(admin.TabularInline):
+    classes = ("user-race-ethnicity-inline",)
+    model = UserRaceEthnicity
+    form = UserRaceEthnicityForm
 
 
 @admin.register(User)
@@ -29,6 +48,10 @@ class UserAdmin(BaseUserAdmin):
         'date_joined',
     )
 
+    inlines = [
+        UserRaceEthnicityInline,
+    ]
+
     fieldsets = (
         (
             _('Personal info'),
@@ -42,7 +65,7 @@ class UserAdmin(BaseUserAdmin):
                     'email',
                     'gender',
                     'date_of_birth',
-                    'address',
+                    'locations',
                 )
             }
         ),
@@ -90,8 +113,6 @@ class UserAdmin(BaseUserAdmin):
 
 @admin.register(Gender)
 class GenderAdmin(admin.ModelAdmin):
-    '''Admin View for Gender'''
-
     list_display = (
         'id',
         'gender',
@@ -100,4 +121,29 @@ class GenderAdmin(admin.ModelAdmin):
     search_fields = (
         'gender',
         'referred_to_as',
+    )
+
+
+@admin.register(Race)
+class RaceAdmin(admin.ModelAdmin):
+    list_display = (
+        'id',
+        'race',
+    )
+    search_fields = (
+        'race',
+    )
+
+
+@admin.register(Ethnicity)
+class EthnicityAdmin(admin.ModelAdmin):
+    list_display = (
+        'id',
+        'race',
+        'ethnicity',
+    )
+
+    search_fields = (
+        'race',
+        'ethnicity',
     )
