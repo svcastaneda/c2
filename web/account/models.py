@@ -56,7 +56,9 @@ class User(AbstractUser):
     locations = models.ManyToManyField(
         Location,
         blank=True,
-        limit_choices_to=(Q(type=Location.HOME) | Q(type=Location.WORK)),
+        limit_choices_to=(
+            Q(location_type=Location.HOME) | Q(location_type=Location.WORK)
+        ),
     )
 
     USERNAME_FIELD = 'email'

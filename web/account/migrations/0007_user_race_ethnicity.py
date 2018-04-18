@@ -8,7 +8,6 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('location', '0002_auto_20180409_1319'),
         ('account', '0006_user_address'),
     ]
 

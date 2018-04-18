@@ -12,16 +12,16 @@ class LocationAdmin(admin.ModelAdmin):
 
     list_display = (
         'address',
-        'type',
+        'location_type',
     )
 
     list_filter = (
-        'type',
+        'location_type',
     )
 
     search_fields = (
         'address',
-        'type',
+        'location_type',
     )
 
     fieldsets = (
@@ -33,7 +33,7 @@ class LocationAdmin(admin.ModelAdmin):
                 ),
                 'fields': (
                     'address',
-                    'type',
+                    'location_type',
                 )
             }
         ),
