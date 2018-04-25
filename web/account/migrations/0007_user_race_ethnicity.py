@@ -47,15 +47,6 @@ class Migration(migrations.Migration):
                 'verbose_name_plural': 'UserRaceEthnicities',
             },
         ),
-        migrations.RemoveField(
-            model_name='user',
-            name='address',
-        ),
-        migrations.AddField(
-            model_name='user',
-            name='locations',
-            field=models.ManyToManyField(blank=True, limit_choices_to=models.Q(('type', 'H'), ('type', 'W'), _connector='OR'), to='location.Location'),
-        ),
         migrations.AddField(
             model_name='userraceethnicity',
             name='user',

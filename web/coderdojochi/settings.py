@@ -45,6 +45,8 @@ INSTALLED_APPS = [
 
     # installed apps
     'address',
+    'phonenumber_field',
+    'django_admin_listfilter_dropdown',
 
     # project apps
     'account',

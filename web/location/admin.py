@@ -2,8 +2,9 @@ from django.contrib import admin
 
 from address.forms import AddressWidget
 from address.models import AddressField
+from django_admin_listfilter_dropdown.filters import (ChoiceDropdownFilter)
 
-from .models import Location
+from .models import Location, School
 
 
 @admin.register(Location)
@@ -48,3 +49,23 @@ class LocationAdmin(admin.ModelAdmin):
             )
         }
     }
+
+
+@admin.register(School)
+class SchoolAdmin(admin.ModelAdmin):
+    '''Admin View for School'''
+
+    list_display = (
+        'id',
+        'name',
+        'school_type',
+    )
+    list_filter = (
+        ('school_type', ChoiceDropdownFilter),
+    )
+    search_fields = (
+        'name',
+    )
+    ordering = (
+        'name',
+    )

@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='user',
-            name='address',
+            name='locations',
             field=models.ManyToManyField(blank=True, limit_choices_to=models.Q(('location_type', 'H'), ('location_type', 'W'), _connector='OR'), to='location.Location'),
         ),
     ]
