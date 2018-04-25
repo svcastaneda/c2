@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "899ded297a6651e2b85ea53585177b4c3a46f03a7986b1bc730e7763f3f66c32"
+            "sha256": "f3ed00d5a42888a2ce8a2ee95b38f6fc85c3d7f5eb57087eb0b821191e6a8b7d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,10 @@
         ]
     },
     "default": {
+        "address": {
+            "git": "https://github.com/karbassi/django-address.git",
+            "ref": "django-2.x"
+        },
         "autopep8": {
             "hashes": [
                 "sha256:c7be71ab0cb2f50c9c22c82f0c9acaafc6f57492c3fbfee9790c415005c2b9a5"
@@ -45,11 +49,6 @@
             ],
             "index": "pypi",
             "version": "==2.0.3"
-        },
-        "django-address": {
-            "editable": true,
-            "git": "https://github.com/karbassi/django-address.git",
-            "ref": "e7f74a8b94c9ba35ffe7d6b885adf2d8e80f8488"
         },
         "django-admin-list-filter-dropdown": {
             "hashes": [

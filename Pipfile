@@ -14,7 +14,7 @@ whitenoise = "*"
 phonenumberslite = "*"
 django-phonenumber-field = "*"
 django-admin-list-filter-dropdown = "*"
-django-address = {git = "https://github.com/karbassi/django-address.git", editable = true, ref = "django-2.x"}
+address = {git = "https://github.com/karbassi/django-address.git", ref = "django-2.x"}
 
 [dev-packages]
 

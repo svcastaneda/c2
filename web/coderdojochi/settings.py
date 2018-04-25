@@ -28,6 +28,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '0.0.0.0',
     'localhost',
     'coderdojochi-v2.herokuapp.com'
 ]
