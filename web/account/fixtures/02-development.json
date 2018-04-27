@@ -22,5 +22,21 @@
         2
       ]
     }
+  },
+  {
+    "model": "account.email",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "address": "mike@admin.com"
+    }
+  },
+  {
+    "model": "account.email",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "address": "rob@admin.com"
+    }
   }
 ]

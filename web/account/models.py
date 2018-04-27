@@ -8,6 +8,8 @@ from django.utils import timezone
 
 from location.models import Location
 
+from phonenumber_field.modelfields import PhoneNumberField
+
 
 class UserManager(DefaultUserManager):
     def create_user(self, email=None, password=None, **extra_fields):
@@ -79,6 +81,60 @@ class User(AbstractUser):
     age.short_description = 'Age'
 
 
+class Email(models.Model):
+    """Model for simple email storage"""
+
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='contact_emails',
+    )
+
+    address = models.EmailField()
+
+    active = models.BooleanField(
+        default=True,
+    )
+
+    class Meta:
+        """Meta definition for Email."""
+
+        verbose_name = 'Email Address'
+        verbose_name_plural = 'Email Addresses'
+
+    def __str__(self):
+        """Unicode representation of Email."""
+        return self.address
+
+
+class Phone(models.Model):
+    """Model for simple Phone storage"""
+
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='contact_phones',
+    )
+
+    number = PhoneNumberField(
+        help_text="Please use the following format: <em>+1 XXX-XXX-XXXX</em>",
+    )
+
+    active = models.BooleanField(
+        default=True,
+    )
+
+    class Meta:
+        """Meta definition for Phone."""
+
+        verbose_name = 'Phone Number'
+        verbose_name_plural = 'Phone Numbers'
+
+    def __str__(self):
+        """Unicode representation of Phone."""
+        return f"{self.number}"
+
+
 class Gender(models.Model):
     """Model definition for Gender."""
 
@@ -108,7 +164,7 @@ class Gender(models.Model):
 
     def __str__(self):
         """Unicode representation of Gender."""
-        return self.gender
+        return f"{self.gender}"
 
 
 class Race(models.Model):
@@ -125,7 +181,7 @@ class Race(models.Model):
 
     def __str__(self):
         """Unicode representation of Race."""
-        return self.race
+        return f"{self.race}"
 
 
 class Ethnicity(models.Model):
