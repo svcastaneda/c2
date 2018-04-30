@@ -101,9 +101,14 @@ GOOGLE_API_KEY = os.environ['GOOGLE_API_KEY']
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
 DATABASES = {
-    'default': dj_database_url.config(default='postgresql://postgres@db:5432/postgres')
+    'default': {
+        **dj_database_url.config(default='postgresql://postgres@db:5432/postgres'),
+        'TEST': {
+            'NAME': 'db_test',
+            'ENGINE': 'django.db.backends.sqlite3',
+        },
+    }
 }
 
 

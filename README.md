@@ -76,13 +76,13 @@ docker-compose run web python manage.py migrate
 ## Testing
 ```bash
 # Run all tests
-docker-compose run web invoke django-test
+docker-compose run --rm web invoke test
 
 # Run test for <app>
-docker-compose run web invoke django-test <app>
+docker-compose run --rm web invoke test -a <app>
 
 # Example for 'account' app
-docker-compose run web invoke django-test account
+docker-compose run --rm web invoke test -a account
 ```
 
 ---
