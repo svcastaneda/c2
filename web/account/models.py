@@ -6,7 +6,7 @@ from django.db import models
 from django.db.models import Q
 from django.utils import timezone
 
-from location.models import Location
+from location.models import Location, School
 
 from phonenumber_field.modelfields import PhoneNumberField
 
@@ -61,6 +61,11 @@ class User(AbstractUser):
         limit_choices_to=(
             Q(location_type=Location.HOME) | Q(location_type=Location.WORK)
         ),
+    )
+
+    schools = models.ManyToManyField(
+        School,
+        blank=True,
     )
 
     USERNAME_FIELD = 'email'

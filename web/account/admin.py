@@ -94,6 +94,7 @@ class UserAdmin(BaseUserAdmin):
                     'gender',
                     'date_of_birth',
                     'locations',
+                    'schools',
                 )
             }
         ),
