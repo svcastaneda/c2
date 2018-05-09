@@ -55,6 +55,11 @@ class User(AbstractUser):
         blank=True,
     )
 
+    bio = models.TextField(
+        null=True,
+        blank=True,
+    )
+
     locations = models.ManyToManyField(
         Location,
         blank=True,

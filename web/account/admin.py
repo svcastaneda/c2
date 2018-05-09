@@ -92,6 +92,7 @@ class UserAdmin(BaseUserAdmin):
                     'last_name',
                     'email',
                     'gender',
+                    'bio',
                     'date_of_birth',
                     'locations',
                     'schools',
