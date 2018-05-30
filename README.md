@@ -54,20 +54,20 @@ For a full list of management options, start the app, then create a shell into t
 docker-compose up
 
 # In another window
-docker-compose run web bash
+docker-compose run --rm web bash
 invoke --list
 ```
 
 ## Migrations
 ```bash
 # Create migrations
-docker-compose run web python manage.py makemigrations
+docker-compose run --rm web python manage.py makemigrations
 
 # Save a single app's model as fixtures
-docker-compose run web python manage.py dumpdata APP.MODEL > web/APP/fixtures/MODEL.json
+docker-compose run --rm web python manage.py dumpdata APP.MODEL > web/APP/fixtures/MODEL.json
 
 # Run Migrations
-docker-compose run web python manage.py migrate
+docker-compose run --rm web python manage.py migrate
 
 ```
 

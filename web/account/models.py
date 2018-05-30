@@ -36,6 +36,16 @@ class User(AbstractUser):
 
     objects = UserManager()
 
+    bio = models.TextField(
+        null=True,
+        blank=True,
+    )
+
+    date_of_birth = models.DateField(
+        null=True,
+        blank=True,
+    )
+
     email = models.EmailField(
         unique=True,
         error_messages={
@@ -50,22 +60,17 @@ class User(AbstractUser):
         null=True,
     )
 
-    date_of_birth = models.DateField(
-        null=True,
-        blank=True,
-    )
-
-    bio = models.TextField(
-        null=True,
-        blank=True,
-    )
-
     locations = models.ManyToManyField(
         Location,
         blank=True,
         limit_choices_to=(
             Q(location_type=Location.HOME) | Q(location_type=Location.WORK)
         ),
+    )
+
+    medical_conditions = models.TextField(
+        null=True,
+        blank=True,
     )
 
     schools = models.ManyToManyField(
@@ -94,16 +99,16 @@ class User(AbstractUser):
 class Email(models.Model):
     """Model for simple email storage"""
 
-    user = models.ForeignKey(
-        User,
-        on_delete=models.CASCADE,
-        related_name='contact_emails',
+    active = models.BooleanField(
+        default=True,
     )
 
     address = models.EmailField()
 
-    active = models.BooleanField(
-        default=True,
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='contact_emails',
     )
 
     class Meta:
@@ -120,18 +125,18 @@ class Email(models.Model):
 class Phone(models.Model):
     """Model for simple Phone storage"""
 
-    user = models.ForeignKey(
-        User,
-        on_delete=models.CASCADE,
-        related_name='contact_phones',
+    active = models.BooleanField(
+        default=True,
     )
 
     number = PhoneNumberField(
         help_text="Please use the following format: <em>+1 XXX-XXX-XXXX</em>",
     )
 
-    active = models.BooleanField(
-        default=True,
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='contact_phones',
     )
 
     class Meta:
@@ -219,18 +224,6 @@ class Ethnicity(models.Model):
 class UserRaceEthnicity(models.Model):
     """Model definition for UserRaceEthnicity."""
 
-    user = models.ForeignKey(
-        User,
-        on_delete=models.CASCADE
-    )
-
-    race = models.ForeignKey(
-        Race,
-        blank=True,
-        null=True,
-        on_delete=models.CASCADE
-    )
-
     ethnicity = models.ForeignKey(
         Ethnicity,
         blank=True,
@@ -242,6 +235,18 @@ class UserRaceEthnicity(models.Model):
         blank=True,
         null=True,
         max_length=255
+    )
+
+    race = models.ForeignKey(
+        Race,
+        blank=True,
+        null=True,
+        on_delete=models.CASCADE
+    )
+
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE
     )
 
     class Meta:

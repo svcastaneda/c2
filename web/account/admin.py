@@ -96,6 +96,7 @@ class UserAdmin(BaseUserAdmin):
                     'date_of_birth',
                     'locations',
                     'schools',
+                    'medical_conditions',
                 )
             }
         ),
