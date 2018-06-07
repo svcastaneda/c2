@@ -48,11 +48,17 @@ INSTALLED_APPS = [
     'address',
     'phonenumber_field',
     'django_admin_listfilter_dropdown',
+    'termsandconditions',
 
     # project apps
     'account',
+    'home',
     'location',
 ]
+
+# When we add SocialAuth, we need to follow these instructions:
+# https://github.com/cyface/django-termsandconditions#terms-and-conditions-pipeline
+SOCIAL_AUTH_PIPELINE = ()
 
 MIDDLEWARE = [
 
@@ -66,12 +72,15 @@ MIDDLEWARE = [
     # http://whitenoise.evans.io/en/stable/#quickstart-for-django-apps
     'whitenoise.middleware.WhiteNoiseMiddleware',
 
+    # https://github.com/cyface/django-termsandconditions#terms-and-conditions-middleware
+    # 'termsandconditions.middleware.TermsAndConditionsRedirectMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware'
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'coderdojochi.urls'

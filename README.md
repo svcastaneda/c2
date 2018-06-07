@@ -3,6 +3,8 @@
 ## Requirements
 - Docker
 
+---
+
 ## Installation
 1. Fork this repo.
 2. Run the following commands changing `USERNAME` to your GitHub username.
@@ -25,6 +27,8 @@ docker-compose build
 docker-compose up
 ```
 
+---
+
 ## Running the App
 
 ```bash
@@ -46,6 +50,7 @@ Password: **coderdojochi**
 
 ---
 
+
 ## Management
 For a full list of management options, start the app, then create a shell into the instance. the following commands:
 
@@ -58,6 +63,15 @@ docker-compose run --rm web bash
 invoke --list
 ```
 
+---
+
+## Adding Dependencies
+```bash
+docker-compose run --rm web pipenv install PACKAGENAME
+```
+
+---
+
 ## Migrations
 ```bash
 # Create migrations
@@ -68,6 +82,9 @@ docker-compose run --rm web python manage.py dumpdata APP.MODEL > web/APP/fixtur
 
 # Run Migrations
 docker-compose run --rm web python manage.py migrate
+
+# Create a new app
+docker-compose run --rm web python manage.py startapp APP_NAME
 
 ```
 

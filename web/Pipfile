@@ -15,6 +15,7 @@ phonenumberslite = "*"
 django-phonenumber-field = "*"
 django-admin-list-filter-dropdown = "*"
 address = {git = "https://github.com/karbassi/django-address.git", ref = "django-2.x"}
+django-termsandconditions = "*"
 
 [dev-packages]
 

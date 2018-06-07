@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f3ed00d5a42888a2ce8a2ee95b38f6fc85c3d7f5eb57087eb0b821191e6a8b7d"
+            "sha256": "8df1c294794e7c458d104cd9cb01c4d34e0c2aef53de6c5df2b29ac4fbae1e92"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -29,10 +29,10 @@
         },
         "babel": {
             "hashes": [
-                "sha256:8ce4cb6fdd4393edd323227cba3a077bceb2a6ce5201c902c65e730046f41f14",
-                "sha256:ad209a68d7162c4cff4b29cdebe3dec4cef75492df501b0049a9433c96ce6f80"
+                "sha256:6778d85147d5d85345c14a26aada5e478ab04e39b078b0745ee6870c2b5cf669",
+                "sha256:8cba50f48c529ca3fa18cf81fa9403be176d374ac4d60738b839122dfaaa3d23"
             ],
-            "version": "==2.5.3"
+            "version": "==2.6.0"
         },
         "dj-database-url": {
             "hashes": [
@@ -64,6 +64,19 @@
             "index": "pypi",
             "version": "==2.0.0"
         },
+        "django-termsandconditions": {
+            "hashes": [
+                "sha256:e9ff24d3a08c4eb9a56bda4d39c3a56cd8b029d2ac35595f9931db8f76154f25"
+            ],
+            "index": "pypi",
+            "version": "==1.2.10"
+        },
+        "future": {
+            "hashes": [
+                "sha256:e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb"
+            ],
+            "version": "==0.16.0"
+        },
         "gunicorn": {
             "hashes": [
                 "sha256:7b48e797990b7972862bf93c7eec637efb391217485920e6fa5f509376d94727",
@@ -83,11 +96,11 @@
         },
         "phonenumberslite": {
             "hashes": [
-                "sha256:676374b0bb6dc1186aec971fc202662334337f8b27a756e7dda79af6233c54a9",
-                "sha256:c3c66e6aefce0a406868e06959579b2f46060a0e5302886bbfb79ff3f1d013f5"
+                "sha256:0a8449a933971d5bebfa5b0db8b798ea12d8adbb43cfe7d25a8fc57e0767c1b5",
+                "sha256:70f8e6ba97b5d924b11eb01f6b40939e17e91a2ec72bd543d3ae9b923bde529b"
             ],
             "index": "pypi",
-            "version": "==8.9.4"
+            "version": "==8.9.7"
         },
         "psycopg2-binary": {
             "hashes": [
