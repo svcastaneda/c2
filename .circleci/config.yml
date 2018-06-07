@@ -20,17 +20,15 @@ jobs:
 
       # Restore cache
       - restore_cache:
-          key: deps9-{{ .Branch }}-{{ checksum "web/Pipfile.lock" }}
+          key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
 
       # Install
       - run:
-          command: |
-            cd ./web
-            pipenv install
+          command: pipenv install
 
       # Save cache
       - save_cache:
-          key: deps9-{{ .Branch }}-{{ checksum "web/Pipfile.lock" }}
+          key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
           paths:
             - ".venv"
             - "/usr/local/bin"
@@ -38,9 +36,7 @@ jobs:
 
       # Actual tests!
       - run:
-          command: |
-            cd ./web
-            pipenv run "invoke test"
+          command: pipenv run "invoke test"
 
       # Store results
       - store_test_results:
