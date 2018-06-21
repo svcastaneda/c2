@@ -1,0 +1,55 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/c2
+
+    docker:
+      - image: circleci/python:3.6-browsers
+        environment:
+          DATABASE_URL: postgresql://root@localhost/circle_test?sslmode=disable
+      - image: circleci/postgres:10.3-alpine-ram
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
+
+    steps:
+      # Checkout and set permissions
+      - checkout
+      - run: sudo chown -R circleci:circleci /usr/local/bin
+      - run: sudo chown -R circleci:circleci /usr/local/lib/python3.6/site-packages
+
+      # Restore cache
+      - restore_cache:
+          key: deps-{{ .Branch }}-{{ checksum "requirements/local.txt" }}
+
+      # Install
+      - run:
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements/local.txt
+
+      # Save cache
+      - save_cache:
+          key: deps-{{ .Branch }}-{{ checksum "requirements/local.txt" }}
+          paths:
+            - "venv"
+            - "/usr/local/bin"
+            - "/usr/local/lib/python3.6/site-packages"
+
+      # Actual tests!
+      - run:
+          environment:
+            USE_DOCKER: false
+          command: |
+            . venv/bin/activate
+            python manage.py test
+
+      # Store results
+      - store_test_results:
+          path: test-results
+
+      # Store results
+      - store_artifacts:
+          path: test-results
+          destination: tr1
