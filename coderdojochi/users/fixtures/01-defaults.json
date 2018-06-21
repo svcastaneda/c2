@@ -1,0 +1,31 @@
+[
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "argon2$argon2i$v=19$m=512,t=2,p=2$ZjJnYVV5eTlERlBs$DxD26/ICKSP/34UZpsdQWw",
+    "last_login": "2018-06-21T00:14:01.748Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2018-06-21T00:10:11.535Z",
+    "name": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "email": "admin@example.com",
+    "verified": true,
+    "primary": true
+  }
+}
+]

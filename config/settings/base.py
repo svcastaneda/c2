@@ -67,10 +67,13 @@ THIRD_PARTY_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'rest_framework',
+    'address',
+    'phonenumber_field',
 ]
 LOCAL_APPS = [
     'coderdojochi.users.apps.UsersAppConfig',
     # Your stuff: custom apps go here
+    'coderdojochi.location',
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -256,3 +259,6 @@ INSTALLED_APPS += ['compressor']
 STATICFILES_FINDERS += ['compressor.finders.CompressorFinder']
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+# django-address
+GOOGLE_API_KEY = env('GOOGLE_API_KEY')

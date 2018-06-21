@@ -5,3 +5,6 @@ USE_DOCKER=yes
 # Redis
 # ------------------------------------------------------------------------------
 REDIS_URL=redis://redis:6379/0
+
+# Django Address
+GOOGLE_API_KEY=AIzaSyAD6QgkHMHPfZWTln6mAIE-VLogcYhRTtk

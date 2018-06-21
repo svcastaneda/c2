@@ -1,0 +1,2104 @@
+[
+{
+  "model": "address.country",
+  "pk": 1,
+  "fields": {
+    "name": "United States",
+    "code": "US"
+  }
+},
+{
+  "model": "address.state",
+  "pk": 1,
+  "fields": {
+    "name": "Illinois",
+    "code": "IL",
+    "country": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 1,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60618",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 2,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60647",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 3,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60632",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 4,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60617",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 5,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60653",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 6,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60630",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 7,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60613",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 8,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60622",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 9,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60610",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 10,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60626",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 11,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60619",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 12,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60609",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 13,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60827",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 14,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60643",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 15,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60659",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 16,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60628",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 17,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60620",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 18,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60637",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 19,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60639",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 20,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60652",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 21,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60641",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 22,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60642",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 23,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60657",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 24,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60607",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 25,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60640",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 26,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60602",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 27,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60614",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 28,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60634",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 29,
+  "fields": {
+    "name": "Chicago Heights",
+    "postal_code": "60411",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 30,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60625",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 31,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60651",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 32,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60605",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 33,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60616",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 34,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60623",
+    "state": 1
+  }
+},
+{
+  "model": "address.locality",
+  "pk": 35,
+  "fields": {
+    "name": "Chicago",
+    "postal_code": "60646",
+    "state": 1
+  }
+},
+{
+  "model": "address.address",
+  "pk": 1,
+  "fields": {
+    "street_number": "3701",
+    "route": "North Kimball Avenue",
+    "locality": 1,
+    "raw": "3701 North Kimball Avenue, Chicago, IL, USA",
+    "formatted": "3701 N Kimball Ave, Chicago, IL 60618, USA",
+    "latitude": 41.9485247,
+    "longitude": -87.7125472
+  }
+},
+{
+  "model": "address.address",
+  "pk": 2,
+  "fields": {
+    "street_number": "3432",
+    "route": "West Diversey Avenue",
+    "locality": 2,
+    "raw": "3432 West Diversey Avenue, Chicago, IL, USA",
+    "formatted": "3432 W Diversey Ave, Chicago, IL 60647, USA",
+    "latitude": 41.9321361,
+    "longitude": -87.7135739
+  }
+},
+{
+  "model": "address.address",
+  "pk": 3,
+  "fields": {
+    "street_number": "4647",
+    "route": "West 47th Street",
+    "locality": 3,
+    "raw": "4647 West 47th Street, Chicago, IL 60632, USA",
+    "formatted": "4647 W 47th St, Chicago, IL 60632, USA",
+    "latitude": 41.8074159,
+    "longitude": -87.7401149
+  }
+},
+{
+  "model": "address.address",
+  "pk": 4,
+  "fields": {
+    "street_number": "3750",
+    "route": "East 112th Street",
+    "locality": 4,
+    "raw": "3750 East 112th Street, Chicago, IL 60617, USA",
+    "formatted": "3750 E 112th St, Chicago, IL 60617, USA",
+    "latitude": 41.6921568,
+    "longitude": -87.5319355
+  }
+},
+{
+  "model": "address.address",
+  "pk": 5,
+  "fields": {
+    "street_number": "1119",
+    "route": "East 46th Street",
+    "locality": 5,
+    "raw": "1119 E 46th St, Chicago, IL 60653, USA",
+    "formatted": "1119 E 46th St, Chicago, IL 60653, USA",
+    "latitude": 41.8110768,
+    "longitude": -87.5986561
+  }
+},
+{
+  "model": "address.address",
+  "pk": 6,
+  "fields": {
+    "street_number": "5025",
+    "route": "North Laramie Avenue",
+    "locality": 6,
+    "raw": "5025 N Laramie Ave, Chicago, IL 60630, USA",
+    "formatted": "5025 N Laramie Ave, Chicago, IL 60630, USA",
+    "latitude": 41.9721047,
+    "longitude": -87.7570358
+  }
+},
+{
+  "model": "address.address",
+  "pk": 7,
+  "fields": {
+    "street_number": "3730",
+    "route": "North Oakley Avenue",
+    "locality": 1,
+    "raw": "3730 N Oakley Ave, Chicago, IL 60618, USA",
+    "formatted": "3730 N Oakley Ave, Chicago, IL 60618, USA",
+    "latitude": 41.9493442,
+    "longitude": -87.6866957
+  }
+},
+{
+  "model": "address.address",
+  "pk": 8,
+  "fields": {
+    "street_number": "4251",
+    "route": "North Clarendon Avenue",
+    "locality": 7,
+    "raw": "4251 N Clarendon Ave, Chicago, IL 60613, USA",
+    "formatted": "4251 N Clarendon Ave, Chicago, IL 60613, USA",
+    "latitude": 41.9600422,
+    "longitude": -87.6492392
+  }
+},
+{
+  "model": "address.address",
+  "pk": 9,
+  "fields": {
+    "street_number": "1621",
+    "route": "West Wabansia Avenue",
+    "locality": 8,
+    "raw": "1621 W Wabansia Ave, Chicago, IL 60622, USA",
+    "formatted": "1621 W Wabansia Ave, Chicago, IL 60622, USA",
+    "latitude": 41.912127,
+    "longitude": -87.6686796
+  }
+},
+{
+  "model": "address.address",
+  "pk": 10,
+  "fields": {
+    "street_number": "900",
+    "route": "North Franklin Street",
+    "locality": 9,
+    "raw": "900 North Franklin Street, Chicago, IL, USA",
+    "formatted": "900 N Franklin St, Chicago, IL 60610, USA",
+    "latitude": 41.8991988,
+    "longitude": -87.6361438
+  }
+},
+{
+  "model": "address.address",
+  "pk": 11,
+  "fields": {
+    "street_number": "7212",
+    "route": "North Clark Street",
+    "locality": 10,
+    "raw": "7212 N Clark St, Chicago, IL 60626, USA",
+    "formatted": "7212 N Clark St, Chicago, IL 60626, USA",
+    "latitude": 42.0134271,
+    "longitude": -87.6752186
+  }
+},
+{
+  "model": "address.address",
+  "pk": 12,
+  "fields": {
+    "street_number": "1501",
+    "route": "East 83rd Place",
+    "locality": 11,
+    "raw": "1501 East 83rd Place, Chicago, IL 60619, USA",
+    "formatted": "1501 E 83rd Pl, Chicago, IL 60619, USA",
+    "latitude": 41.7429554,
+    "longitude": -87.5876955
+  }
+},
+{
+  "model": "address.address",
+  "pk": 13,
+  "fields": {
+    "street_number": "1816",
+    "route": "West Garfield Boulevard",
+    "locality": 12,
+    "raw": "1816 W Garfield Blvd, Chicago, IL 60609, USA",
+    "formatted": "1816 W Garfield Blvd, Chicago, IL 60609, USA",
+    "latitude": 41.7942144,
+    "longitude": -87.6699027
+  }
+},
+{
+  "model": "address.address",
+  "pk": 14,
+  "fields": {
+    "street_number": "2235",
+    "route": "North Hamilton Avenue",
+    "locality": 2,
+    "raw": "2235 North Hamilton Avenue, Chicago, IL, USA",
+    "formatted": "2235 N Hamilton Ave, Chicago, IL 60647, USA",
+    "latitude": 41.9225411,
+    "longitude": -87.6808034
+  }
+},
+{
+  "model": "address.address",
+  "pk": 15,
+  "fields": {
+    "street_number": "1443",
+    "route": "North Ogden Avenue",
+    "locality": 9,
+    "raw": "1443 North Ogden Avenue, Chicago, IL 60610, USA",
+    "formatted": "1443 N Ogden Ave, Chicago, IL 60610, USA",
+    "latitude": 41.9074487,
+    "longitude": -87.6453953
+  }
+},
+{
+  "model": "address.address",
+  "pk": 16,
+  "fields": {
+    "street_number": "3820",
+    "route": "North Spaulding Avenue",
+    "locality": 1,
+    "raw": "3820 North Spaulding Avenue, Chicago, IL 60618, USA",
+    "formatted": "3820 N Spaulding Ave, Chicago, IL 60618, USA",
+    "latitude": 41.9507565,
+    "longitude": -87.710873
+  }
+},
+{
+  "model": "address.address",
+  "pk": 17,
+  "fields": {
+    "street_number": "801",
+    "route": "East 133rd Place",
+    "locality": 13,
+    "raw": "801 East 133rd Place, Chicago, IL 60827, USA",
+    "formatted": "801 E 133rd Pl, Chicago, IL 60827, USA",
+    "latitude": 41.6525444,
+    "longitude": -87.6022056
+  }
+},
+{
+  "model": "address.address",
+  "pk": 18,
+  "fields": {
+    "street_number": "13300",
+    "route": "South Langley Avenue",
+    "locality": 13,
+    "raw": "13300 South Langley Avenue, Chicago, IL 60827, USA",
+    "formatted": "13300 S Langley Ave, Chicago, IL 60827, USA",
+    "latitude": 41.6536949,
+    "longitude": -87.6049637
+  }
+},
+{
+  "model": "address.address",
+  "pk": 19,
+  "fields": {
+    "street_number": "1309",
+    "route": "95th Street",
+    "locality": 14,
+    "raw": "1309 West 95th Street, Chicago, IL 60643, USA",
+    "formatted": "1309 95th St, Chicago, IL 60643, USA",
+    "latitude": 41.7202538,
+    "longitude": -87.6557239
+  }
+},
+{
+  "model": "address.address",
+  "pk": 20,
+  "fields": {
+    "street_number": "9535",
+    "route": "South Loomis Street",
+    "locality": 14,
+    "raw": "9535 South Loomis Street, Chicago, IL, USA",
+    "formatted": "9535 S Loomis St, Chicago, IL 60643, USA",
+    "latitude": 41.7200074,
+    "longitude": -87.6569955
+  }
+},
+{
+  "model": "address.address",
+  "pk": 21,
+  "fields": {
+    "street_number": "3900",
+    "route": "West Peterson Avenue",
+    "locality": 15,
+    "raw": "3900 West Peterson Avenue, Chicago, IL 60659, USA",
+    "formatted": "3900 W Peterson Ave, Chicago, IL 60659, USA",
+    "latitude": 41.9910353,
+    "longitude": -87.7275236
+  }
+},
+{
+  "model": "address.address",
+  "pk": 22,
+  "fields": {
+    "street_number": "11530",
+    "route": "South Prairie Avenue",
+    "locality": 16,
+    "raw": "11530 South Prairie Avenue, Chicago, IL 60628, USA",
+    "formatted": "11530 S Prairie Ave, Chicago, IL 60628, USA",
+    "latitude": 41.6844595,
+    "longitude": -87.616797
+  }
+},
+{
+  "model": "address.address",
+  "pk": 23,
+  "fields": {
+    "street_number": "1817",
+    "route": "West 80th Street",
+    "locality": 17,
+    "raw": "1817 West 80th Street, Chicago, IL 60620, USA",
+    "formatted": "1817 W 80th St, Chicago, IL 60620, USA",
+    "latitude": 41.7481373,
+    "longitude": -87.6689648
+  }
+},
+{
+  "model": "address.address",
+  "pk": 24,
+  "fields": {
+    "street_number": "110",
+    "route": "East 61st Street",
+    "locality": 18,
+    "raw": "110 E 61st St, Chicago, IL 60637, USA",
+    "formatted": "110 E 61st St, Chicago, IL 60637, USA",
+    "latitude": 41.7842096,
+    "longitude": -87.6211832
+  }
+},
+{
+  "model": "address.address",
+  "pk": 25,
+  "fields": {
+    "street_number": "2245",
+    "route": "North McVicker Avenue",
+    "locality": 19,
+    "raw": "2245 North McVicker Avenue, Chicago, IL, USA",
+    "formatted": "2245 N McVicker Ave, Chicago, IL 60639, USA",
+    "latitude": 41.9216407,
+    "longitude": -87.7766023
+  }
+},
+{
+  "model": "address.address",
+  "pk": 26,
+  "fields": {
+    "street_number": "8130",
+    "route": "South California Avenue",
+    "locality": 20,
+    "raw": "8130 South California Avenue, Chicago, IL 60652, USA",
+    "formatted": "8130 S California Ave, Chicago, IL 60652, USA",
+    "latitude": 41.7451053,
+    "longitude": -87.6928567
+  }
+},
+{
+  "model": "address.address",
+  "pk": 27,
+  "fields": {
+    "street_number": "3815",
+    "route": "North Kedvale Avenue",
+    "locality": 21,
+    "raw": "3815 North Kedvale Avenue, Chicago, IL 60641, USA",
+    "formatted": "3815 N Kedvale Ave, Chicago, IL 60641, USA",
+    "latitude": 41.9504273,
+    "longitude": -87.7305266
+  }
+},
+{
+  "model": "address.address",
+  "pk": 28,
+  "fields": {
+    "street_number": "3900",
+    "route": "Lawndale Avenue",
+    "locality": 1,
+    "raw": "3900 N Lawndale Ave, Chicago, IL 60618, USA",
+    "formatted": "3900 Lawndale Ave, Chicago, IL 60618, USA",
+    "latitude": 41.9522637,
+    "longitude": -87.7204765
+  }
+},
+{
+  "model": "address.address",
+  "pk": 29,
+  "fields": {
+    "street_number": "1535",
+    "route": "North Dayton Street",
+    "locality": 22,
+    "raw": "1535 North Dayton Street, Chicago, IL 60642, USA",
+    "formatted": "1535 N Dayton St, Chicago, IL 60642, USA",
+    "latitude": 41.9093842,
+    "longitude": -87.6490953
+  }
+},
+{
+  "model": "address.address",
+  "pk": 30,
+  "fields": {
+    "street_number": "2236",
+    "route": "North Rockwell Street",
+    "locality": 2,
+    "raw": "2236 N Rockwell St, Chicago, IL 60647, USA",
+    "formatted": "2236 N Rockwell St, Chicago, IL 60647, USA",
+    "latitude": 41.9226351,
+    "longitude": -87.6932033
+  }
+},
+{
+  "model": "address.address",
+  "pk": 31,
+  "fields": {
+    "street_number": "3319",
+    "route": "North Clifton Avenue",
+    "locality": 23,
+    "raw": "3319 N Clifton Ave, Chicago, IL 60657, USA",
+    "formatted": "3319 N Clifton Ave, Chicago, IL 60657, USA",
+    "latitude": 41.9422972,
+    "longitude": -87.6575152
+  }
+},
+{
+  "model": "address.address",
+  "pk": 32,
+  "fields": {
+    "street_number": "5035",
+    "route": "West North Avenue",
+    "locality": 19,
+    "raw": "5035 W North Ave, Chicago, IL 60639, USA",
+    "formatted": "5035 W North Ave, Chicago, IL 60639, USA",
+    "latitude": 41.9092894,
+    "longitude": -87.7525808
+  }
+},
+{
+  "model": "address.address",
+  "pk": 33,
+  "fields": {
+    "street_number": "2245",
+    "route": "West Pershing Road",
+    "locality": 12,
+    "raw": "2245 W Pershing Rd, Chicago, IL 60609, USA",
+    "formatted": "2245 W Pershing Rd, Chicago, IL 60609, USA",
+    "latitude": 41.8228762,
+    "longitude": -87.6820487
+  }
+},
+{
+  "model": "address.address",
+  "pk": 34,
+  "fields": {
+    "street_number": "1340",
+    "route": "West Harrison Street",
+    "locality": 24,
+    "raw": "1340 W Harrison St, Chicago, IL 60607, USA",
+    "formatted": "1340 W Harrison St, Chicago, IL 60607, USA",
+    "latitude": 41.8748933,
+    "longitude": -87.6608103
+  }
+},
+{
+  "model": "address.address",
+  "pk": 35,
+  "fields": {
+    "street_number": "9241",
+    "route": "South Leavitt Street",
+    "locality": 14,
+    "raw": "9241 South Leavitt Street, Chicago, IL 60643, USA",
+    "formatted": "9241 S Leavitt St, Chicago, IL 60643, USA",
+    "latitude": 41.7251914,
+    "longitude": -87.6768363
+  }
+},
+{
+  "model": "address.address",
+  "pk": 36,
+  "fields": {
+    "street_number": "2501",
+    "route": "West Addison Street",
+    "locality": 1,
+    "raw": "2501 W Addison St, Chicago, IL 60618, USA",
+    "formatted": "2501 W Addison St, Chicago, IL 60618, USA",
+    "latitude": 41.945431,
+    "longitude": -87.690618
+  }
+},
+{
+  "model": "address.address",
+  "pk": 37,
+  "fields": {
+    "street_number": "3221",
+    "route": "North Sacramento Avenue",
+    "locality": 1,
+    "raw": "3221 N Sacramento Ave, Chicago, IL 60618, USA",
+    "formatted": "3221 N Sacramento Ave, Chicago, IL 60618, USA",
+    "latitude": 41.9405199,
+    "longitude": -87.7024047
+  }
+},
+{
+  "model": "address.address",
+  "pk": 38,
+  "fields": {
+    "street_number": "4728",
+    "route": "North Wolcott Avenue",
+    "locality": 25,
+    "raw": "4728 N Wolcott Ave, Chicago, IL 60640, USA",
+    "formatted": "4728 N Wolcott Ave, Chicago, IL 60640, USA",
+    "latitude": 41.9681403,
+    "longitude": -87.6781079
+  }
+},
+{
+  "model": "address.address",
+  "pk": 39,
+  "fields": {
+    "street_number": "1",
+    "route": "North State Street",
+    "locality": 26,
+    "raw": "1 N State St, Chicago, IL 60602, USA",
+    "formatted": "1 N State St, Chicago, IL 60602, USA",
+    "latitude": 41.8822557,
+    "longitude": -87.6275862
+  }
+},
+{
+  "model": "address.address",
+  "pk": 40,
+  "fields": {
+    "street_number": "1632",
+    "route": "West Wrightwood Avenue",
+    "locality": 27,
+    "raw": "1632 West Wrightwood Avenue, Chicago, IL 60614, USA",
+    "formatted": "1632 W Wrightwood Ave, Chicago, IL 60614, USA",
+    "latitude": 41.929165,
+    "longitude": -87.6692863
+  }
+},
+{
+  "model": "address.address",
+  "pk": 41,
+  "fields": {
+    "street_number": "4131",
+    "route": "West Cortland Street",
+    "locality": 19,
+    "raw": "4131 West Cortland Street, Chicago, IL, USA",
+    "formatted": "4131 W Cortland St, Chicago, IL 60639, USA",
+    "latitude": 41.9148777,
+    "longitude": -87.7298054
+  }
+},
+{
+  "model": "address.address",
+  "pk": 42,
+  "fields": {
+    "street_number": "2009",
+    "route": "West Schiller Street",
+    "locality": 8,
+    "raw": "2009 W Schiller St, Chicago, IL 60622, USA",
+    "formatted": "2009 W Schiller St, Chicago, IL 60622, USA",
+    "latitude": 41.9068861,
+    "longitude": -87.6780938
+  }
+},
+{
+  "model": "address.address",
+  "pk": 43,
+  "fields": {
+    "street_number": "3425",
+    "route": "North Major Avenue",
+    "locality": 28,
+    "raw": "3425 North Major Avenue, Chicago, IL 60634, USA",
+    "formatted": "3425 N Major Ave, Chicago, IL 60634, USA",
+    "latitude": 41.9426021,
+    "longitude": -87.7690709
+  }
+},
+{
+  "model": "address.address",
+  "pk": 44,
+  "fields": {
+    "street_number": "1345",
+    "route": "Sunnyside Avenue",
+    "locality": 29,
+    "raw": "1345 Sunnyside Ave, Chicago Heights, IL 60411, USA",
+    "formatted": "1345 Sunnyside Ave, Chicago Heights, IL 60411, USA",
+    "latitude": 41.5068083,
+    "longitude": -87.6522009
+  }
+},
+{
+  "model": "address.address",
+  "pk": 45,
+  "fields": {
+    "street_number": "3436",
+    "route": "West Wilson Avenue",
+    "locality": 30,
+    "raw": "3436 W Wilson Ave, Chicago, IL 60625, USA",
+    "formatted": "3436 W Wilson Ave, Chicago, IL 60625, USA",
+    "latitude": 41.9650389,
+    "longitude": -87.7144907
+  }
+},
+{
+  "model": "address.address",
+  "pk": 46,
+  "fields": {
+    "street_number": "1424",
+    "route": "North Cleaver Street",
+    "locality": 22,
+    "raw": "1424 N Cleaver St, Chicago, IL 60642, USA",
+    "formatted": "1424 N Cleaver St, Chicago, IL 60642, USA",
+    "latitude": 41.9078409,
+    "longitude": -87.6646632
+  }
+},
+{
+  "model": "address.address",
+  "pk": 47,
+  "fields": {
+    "street_number": "3645",
+    "route": "West Chicago Avenue",
+    "locality": 31,
+    "raw": "3645 W Chicago Ave, Chicago, IL 60651, USA",
+    "formatted": "3645 W Chicago Ave, Chicago, IL 60651, USA",
+    "latitude": 41.8952324,
+    "longitude": -87.7181467
+  }
+},
+{
+  "model": "address.address",
+  "pk": 48,
+  "fields": {
+    "street_number": "111",
+    "route": "South Throop Street",
+    "locality": 24,
+    "raw": "111 S Throop St, Chicago, IL 60607, USA",
+    "formatted": "111 S Throop St, Chicago, IL 60607, USA",
+    "latitude": 41.8797242,
+    "longitude": -87.6594184
+  }
+},
+{
+  "model": "address.address",
+  "pk": 49,
+  "fields": {
+    "street_number": "640",
+    "route": "West Scott Street",
+    "locality": 9,
+    "raw": "640 W Scott St, Chicago, IL 60610, USA",
+    "formatted": "640 W Scott St, Chicago, IL 60610, USA",
+    "latitude": 41.9052755,
+    "longitude": -87.6452411
+  }
+},
+{
+  "model": "address.address",
+  "pk": 50,
+  "fields": {
+    "street_number": "1212",
+    "route": "South Plymouth Court",
+    "locality": 32,
+    "raw": "1212 S Plymouth Ct, Chicago, IL 60605, USA",
+    "formatted": "1212 S Plymouth Ct, Chicago, IL 60605, USA",
+    "latitude": 41.8666441,
+    "longitude": -87.6290497
+  }
+},
+{
+  "model": "address.address",
+  "pk": 51,
+  "fields": {
+    "street_number": "3920",
+    "route": "North Leavitt Street",
+    "locality": 1,
+    "raw": "3920 North Leavitt Street, Chicago, IL 60618, USA",
+    "formatted": "3920 N Leavitt St, Chicago, IL 60618, USA",
+    "latitude": 41.952887,
+    "longitude": -87.6838074
+  }
+},
+{
+  "model": "address.address",
+  "pk": 52,
+  "fields": {
+    "street_number": "3900",
+    "route": "North Leavitt Street",
+    "locality": 1,
+    "raw": "3900 North Leavitt Street, Chicago, IL 60618, USA",
+    "formatted": "3900 N Leavitt St, Chicago, IL 60618, USA",
+    "latitude": 41.9525014,
+    "longitude": -87.6838845
+  }
+},
+{
+  "model": "address.address",
+  "pk": 53,
+  "fields": {
+    "street_number": "247",
+    "route": "West 23rd Street",
+    "locality": 33,
+    "raw": "247 West 23rd Street, Chicago, IL 60616, USA",
+    "formatted": "247 W 23rd St, Chicago, IL 60616, USA",
+    "latitude": 41.8497783,
+    "longitude": -87.6337832
+  }
+},
+{
+  "model": "address.address",
+  "pk": 54,
+  "fields": {
+    "street_number": "4140",
+    "route": "North Marine Drive",
+    "locality": 7,
+    "raw": "4140 N Marine Dr, Chicago, IL 60613, USA",
+    "formatted": "4140 N Marine Dr, Chicago, IL 60613, USA",
+    "latitude": 41.9567418,
+    "longitude": -87.6469914
+  }
+},
+{
+  "model": "address.address",
+  "pk": 55,
+  "fields": {
+    "street_number": "2815",
+    "route": "South Komensky Avenue",
+    "locality": 34,
+    "raw": "2815 S Komensky Ave, Chicago, IL 60623, USA",
+    "formatted": "2815 S Komensky Ave, Chicago, IL 60623, USA",
+    "latitude": 41.8400368,
+    "longitude": -87.7253424
+  }
+},
+{
+  "model": "address.address",
+  "pk": 56,
+  "fields": {
+    "street_number": "6950",
+    "route": "North Hiawatha Avenue",
+    "locality": 35,
+    "raw": "6950 N Hiawatha Ave, Chicago, IL 60646, USA",
+    "formatted": "6950 N Hiawatha Ave, Chicago, IL 60646, USA",
+    "latitude": 42.0072254,
+    "longitude": -87.778526
+  }
+},
+{
+  "model": "location.location",
+  "pk": 1,
+  "fields": {
+    "address": 1,
+    "location_type": "H"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 2,
+  "fields": {
+    "address": 2,
+    "location_type": "W"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 3,
+  "fields": {
+    "address": 3,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 4,
+  "fields": {
+    "address": 4,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 5,
+  "fields": {
+    "address": 5,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 6,
+  "fields": {
+    "address": 6,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 7,
+  "fields": {
+    "address": 7,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 8,
+  "fields": {
+    "address": 8,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 9,
+  "fields": {
+    "address": 9,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 10,
+  "fields": {
+    "address": 10,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 11,
+  "fields": {
+    "address": 11,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 12,
+  "fields": {
+    "address": 12,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 13,
+  "fields": {
+    "address": 13,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 14,
+  "fields": {
+    "address": 14,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 15,
+  "fields": {
+    "address": 15,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 16,
+  "fields": {
+    "address": 16,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 17,
+  "fields": {
+    "address": 17,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 18,
+  "fields": {
+    "address": 18,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 19,
+  "fields": {
+    "address": 19,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 20,
+  "fields": {
+    "address": 20,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 21,
+  "fields": {
+    "address": 21,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 22,
+  "fields": {
+    "address": 22,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 23,
+  "fields": {
+    "address": 23,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 24,
+  "fields": {
+    "address": 24,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 25,
+  "fields": {
+    "address": 25,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 26,
+  "fields": {
+    "address": 26,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 27,
+  "fields": {
+    "address": 27,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 28,
+  "fields": {
+    "address": 28,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 29,
+  "fields": {
+    "address": 29,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 30,
+  "fields": {
+    "address": 30,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 31,
+  "fields": {
+    "address": 31,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 32,
+  "fields": {
+    "address": 32,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 33,
+  "fields": {
+    "address": 33,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 34,
+  "fields": {
+    "address": 34,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 35,
+  "fields": {
+    "address": 35,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 36,
+  "fields": {
+    "address": 36,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 37,
+  "fields": {
+    "address": 37,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 38,
+  "fields": {
+    "address": 38,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 39,
+  "fields": {
+    "address": 39,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 40,
+  "fields": {
+    "address": 40,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 41,
+  "fields": {
+    "address": 41,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 42,
+  "fields": {
+    "address": 42,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 43,
+  "fields": {
+    "address": 43,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 44,
+  "fields": {
+    "address": 44,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 45,
+  "fields": {
+    "address": 45,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 46,
+  "fields": {
+    "address": 46,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 47,
+  "fields": {
+    "address": 47,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 48,
+  "fields": {
+    "address": 48,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 49,
+  "fields": {
+    "address": 49,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 50,
+  "fields": {
+    "address": 50,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 51,
+  "fields": {
+    "address": 51,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 52,
+  "fields": {
+    "address": 52,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 53,
+  "fields": {
+    "address": 53,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 54,
+  "fields": {
+    "address": 54,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 55,
+  "fields": {
+    "address": 55,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.location",
+  "pk": 56,
+  "fields": {
+    "address": 56,
+    "location_type": "S"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 1,
+  "fields": {
+    "name": "Academy For Global Citizenship",
+    "address": 3,
+    "school_type": "C",
+    "phone_number": "+17735821100",
+    "website": "http://www.agcchicago.org"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 2,
+  "fields": {
+    "name": "Annunciata School",
+    "address": 4,
+    "school_type": "PR",
+    "phone_number": "+17733755711",
+    "website": "http://www.annunciataonline.com/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 3,
+  "fields": {
+    "name": "Ariel Elementary Community Academy",
+    "address": 5,
+    "school_type": "P",
+    "phone_number": "+17735351996",
+    "website": null
+  }
+},
+{
+  "model": "location.school",
+  "pk": 4,
+  "fields": {
+    "name": "Beaubien Elementary School",
+    "address": 6,
+    "school_type": "P",
+    "phone_number": "+17735343500",
+    "website": null
+  }
+},
+{
+  "model": "location.school",
+  "pk": 5,
+  "fields": {
+    "name": "Bell Elementary School",
+    "address": 7,
+    "school_type": "P",
+    "phone_number": "+17735345150",
+    "website": "http://bell.cps.edu/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 6,
+  "fields": {
+    "name": "Brennemann Elementary School",
+    "address": 8,
+    "school_type": "P",
+    "phone_number": "+17735345766",
+    "website": null
+  }
+},
+{
+  "model": "location.school",
+  "pk": 7,
+  "fields": {
+    "name": "Burr Elementary School",
+    "address": 9,
+    "school_type": "P",
+    "phone_number": "+17735344090",
+    "website": "http://www.burrschool.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 8,
+  "fields": {
+    "name": "Chicago Grammar School",
+    "address": 10,
+    "school_type": "PR",
+    "phone_number": "+13129445600",
+    "website": "http://www.chicagogrammar.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 9,
+  "fields": {
+    "name": "Chicago Math & Sci Elementary Charter",
+    "address": 11,
+    "school_type": "C",
+    "phone_number": "+17737618960",
+    "website": "http://www.cmsaonline.net/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 10,
+  "fields": {
+    "name": "CICS Avalon",
+    "address": 12,
+    "school_type": "C",
+    "phone_number": "+17737210858",
+    "website": "http://www.regenerationschools.org/cics-avalon/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 11,
+  "fields": {
+    "name": "CICS Basil",
+    "address": 13,
+    "school_type": "C",
+    "phone_number": "+17737789455",
+    "website": "http://www.chicagointl.org/campuses/basil.html"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 12,
+  "fields": {
+    "name": "CICS Bucktown",
+    "address": 14,
+    "school_type": "C",
+    "phone_number": "+17736453321",
+    "website": "http://www.cicsbucktown.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 13,
+  "fields": {
+    "name": "CICS ChicagoQuest",
+    "address": 15,
+    "school_type": "C",
+    "phone_number": "+17735652100",
+    "website": "https://www.chicagoquest.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 14,
+  "fields": {
+    "name": "CICS Irving Park",
+    "address": 16,
+    "school_type": "C",
+    "phone_number": "+17734335000",
+    "website": "http://www.cicsirvingpark.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 15,
+  "fields": {
+    "name": "CICS Larry Hawkins",
+    "address": 17,
+    "school_type": "C",
+    "phone_number": "+17732640505",
+    "website": "https://www.incschools.org/school/chicago-intl-cics-larry-hawkins/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 16,
+  "fields": {
+    "name": "CICS Lloyd Bond",
+    "address": 18,
+    "school_type": "C",
+    "phone_number": "+17734681300",
+    "website": "http://www.chicagointl.org/campuses/lloyd-bond.html"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 17,
+  "fields": {
+    "name": "CICS Longwood",
+    "address": 19,
+    "school_type": "C",
+    "phone_number": "+17732385330",
+    "website": "http://www.chicagointl.org/campuses/longwood.html"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 18,
+  "fields": {
+    "name": "CICS Loomis",
+    "address": 20,
+    "school_type": "C",
+    "phone_number": "+17734298955",
+    "website": "http://www.chicagointl.org/campuses/loomis-primary.html"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 19,
+  "fields": {
+    "name": "CICS Northtown",
+    "address": 21,
+    "school_type": "C",
+    "phone_number": "+17734783655",
+    "website": "https://www.cicsnorthtown.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 20,
+  "fields": {
+    "name": "CICS Prairie",
+    "address": 22,
+    "school_type": "C",
+    "phone_number": "+17739280480",
+    "website": "http://www.cicsprairie.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 21,
+  "fields": {
+    "name": "CICS Ralph Ellison",
+    "address": 23,
+    "school_type": "C",
+    "phone_number": "+17734784434",
+    "website": "https://www.cicsellison.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 22,
+  "fields": {
+    "name": "CICS Washington Park",
+    "address": 24,
+    "school_type": "C",
+    "phone_number": "+17733470200",
+    "website": "http://www.chicagointl.org/campuses/washington-park.html"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 23,
+  "fields": {
+    "name": "CICS West Belden",
+    "address": 25,
+    "school_type": "C",
+    "phone_number": "+17736379430",
+    "website": "http://www.cicswestbelden.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 24,
+  "fields": {
+    "name": "CICS Wrightwood",
+    "address": 26,
+    "school_type": "C",
+    "phone_number": "+17734344575",
+    "website": "https://www.cicswrightwood.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 25,
+  "fields": {
+    "name": "Disney II Elementary School",
+    "address": 27,
+    "school_type": "P",
+    "phone_number": "+17735343750",
+    "website": "https://www.disneyiimagnet.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 26,
+  "fields": {
+    "name": "Disney II Magnet High School",
+    "address": 28,
+    "school_type": "P",
+    "phone_number": "+17735531000",
+    "website": "https://disneyiimagnet.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 27,
+  "fields": {
+    "name": "GCE Lab School",
+    "address": 29,
+    "school_type": "PR",
+    "phone_number": "+13126430991",
+    "website": "https://gcelabschool.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 28,
+  "fields": {
+    "name": "Goethe Elementary School",
+    "address": 30,
+    "school_type": "P",
+    "phone_number": "+17735344135",
+    "website": "https://www.goetheschool.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 29,
+  "fields": {
+    "name": "Hawthorne Elementary Scholastic Academy",
+    "address": 31,
+    "school_type": "P",
+    "phone_number": "+17735345550",
+    "website": "https://www.hawthorneacad.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 30,
+  "fields": {
+    "name": "Horizon Science Academy-Belmont",
+    "address": 32,
+    "school_type": "C",
+    "phone_number": "+12244253347",
+    "website": "http://www.hsabelmont.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 31,
+  "fields": {
+    "name": "Horizon Science Academy-Mckinley Park",
+    "address": 33,
+    "school_type": "C",
+    "phone_number": "+17732478400",
+    "website": "http://www.hsamckinley.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 32,
+  "fields": {
+    "name": "Jackson A Elementary Language Academy",
+    "address": 34,
+    "school_type": "P",
+    "phone_number": "+17735347000",
+    "website": "https://www.andrewjackson.cps.edu/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 33,
+  "fields": {
+    "name": "Kellogg Elementary School",
+    "address": 35,
+    "school_type": "P",
+    "phone_number": "+17735352590",
+    "website": "http://kellogg.cps.edu/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 34,
+  "fields": {
+    "name": "Lane Technical High School",
+    "address": 36,
+    "school_type": "P",
+    "phone_number": "+17735345400",
+    "website": "http://www.lanetech.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 35,
+  "fields": {
+    "name": "Linne Elementary School",
+    "address": 37,
+    "school_type": "P",
+    "phone_number": "+17735345262",
+    "website": "http://www.linneschool.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 36,
+  "fields": {
+    "name": "McPherson Elementary School",
+    "address": 38,
+    "school_type": "P",
+    "phone_number": "+17735342625",
+    "website": "http://mcpherson.cps.edu/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 37,
+  "fields": {
+    "name": "Muchin College Prep",
+    "address": 39,
+    "school_type": "C",
+    "phone_number": "+13124454680",
+    "website": "http://muchincollegeprep.noblenetwork.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 38,
+  "fields": {
+    "name": "Prescott Elementary School",
+    "address": 40,
+    "school_type": "P",
+    "phone_number": "+17735345505",
+    "website": "http://prescott.cps.k12.il.us/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 39,
+  "fields": {
+    "name": "Pritzker College Prep",
+    "address": 41,
+    "school_type": "C",
+    "phone_number": "+17733942848",
+    "website": "http://pritzkercollegeprep.noblenetwork.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 40,
+  "fields": {
+    "name": "Pritzker Elementary School",
+    "address": 42,
+    "school_type": "P",
+    "phone_number": "+17735344415",
+    "website": "https://www.pritzkerschool.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 41,
+  "fields": {
+    "name": "Reinberg Elementary School",
+    "address": 43,
+    "school_type": "P",
+    "phone_number": "+17735343465",
+    "website": "http://reinberg.cps.edu/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 42,
+  "fields": {
+    "name": "Roosevelt Elementary School",
+    "address": 44,
+    "school_type": "P",
+    "phone_number": "+17087564836",
+    "website": null
+  }
+},
+{
+  "model": "location.school",
+  "pk": 43,
+  "fields": {
+    "name": "Roosevelt High School",
+    "address": 45,
+    "school_type": "P",
+    "phone_number": "+17735345000",
+    "website": "https://www.rhsroughriders.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 44,
+  "fields": {
+    "name": "Rowe Elementary School",
+    "address": 46,
+    "school_type": "C",
+    "phone_number": "+13124455870",
+    "website": "https://www.roweelementaryschool.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 45,
+  "fields": {
+    "name": "Rowe-Clark Math & Science Academy",
+    "address": 47,
+    "school_type": "C",
+    "phone_number": "+17732422212",
+    "website": "http://roweclark.noblenetwork.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 46,
+  "fields": {
+    "name": "Skinner Elementary School",
+    "address": 48,
+    "school_type": "P",
+    "phone_number": "+17735347790",
+    "website": "http://www.skinnerwest.cps.edu/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 47,
+  "fields": {
+    "name": "Skinner North Elementary School",
+    "address": 49,
+    "school_type": "P",
+    "phone_number": "+17735348500",
+    "website": "http://www.skinnernorth.org"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 48,
+  "fields": {
+    "name": "South Loop Elementary School",
+    "address": 50,
+    "school_type": "P",
+    "phone_number": "+17735348690",
+    "website": "https://southloopschool.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 49,
+  "fields": {
+    "name": "St Benedict Elementary School",
+    "address": 51,
+    "school_type": "PR",
+    "phone_number": "+17734636797",
+    "website": "http://sbps.stbenedict.com/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 50,
+  "fields": {
+    "name": "St Benedict Preparatory School",
+    "address": 52,
+    "school_type": "PR",
+    "phone_number": "+17735390066",
+    "website": "http://sbps.stbenedict.com"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 51,
+  "fields": {
+    "name": "St Therese School",
+    "address": 53,
+    "school_type": "PR",
+    "phone_number": "+13123262837",
+    "website": "https://www.sttheresechicago.org/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 52,
+  "fields": {
+    "name": "Walt Disney Magnet School",
+    "address": 54,
+    "school_type": "P",
+    "phone_number": "+17735345840",
+    "website": "http://www.disney.cps.edu/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 53,
+  "fields": {
+    "name": "Whitney Elementary School",
+    "address": 55,
+    "school_type": "P",
+    "phone_number": "+17735341560",
+    "website": "http://www.eliwhitneyschool.us/"
+  }
+},
+{
+  "model": "location.school",
+  "pk": 54,
+  "fields": {
+    "name": "Wildwood Elementary School",
+    "address": 56,
+    "school_type": "P",
+    "phone_number": "+17735341188",
+    "website": "https://www.wildwoodworldmagnet.org/"
+  }
+}
+]
