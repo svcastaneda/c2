@@ -25,6 +25,7 @@ coreapi==2.3.3  # https://github.com/core-api/python-client
 # Custom App Dependencies
 # ------------------------------------------------------------------------------
 https://github.com/karbassi/django-address/archive/django-2.x.zip  # django-address
+phonenumbers==8.9.10  # https://github.com/daviddrysdale/python-phonenumbers
 django-phonenumber-field==2.0.0  # https://github.com/stefanfoulis/django-phonenumber-field
 django-admin-list-filter-dropdown==1.0.1
 django-termsandconditions==1.2.11
