@@ -136,7 +136,6 @@ EMAIL_BACKEND = 'anymail.backends.sendgrid.EmailBackend'
 # https://anymail.readthedocs.io/en/stable/installation/#anymail-settings-reference
 ANYMAIL = {
     'SENDGRID_API_KEY': env('SENDGRID_API_KEY'),
-    'SENDGRID_SENDER_DOMAIN': env('SENDGRID_DOMAIN')
 }
 
 # Gunicorn
