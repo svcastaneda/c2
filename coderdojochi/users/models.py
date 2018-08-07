@@ -13,17 +13,21 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 
 class UserManager(DefaultUserManager):
-    def create_user(self, email=None, password=None, **extra_fields):
-        super().create_user(
-            username=uuid.uuid4(),
+    def create_user(self, username=None, email=None, password=None, **extra_fields):
+        username = uuid.uuid4() if username is None else username
+
+        return super().create_user(
+            username=username,
             email=email,
             password=password,
             **extra_fields
         )
 
-    def create_superuser(self, email, password, **extra_fields):
-        super().create_superuser(
-            username=uuid.uuid4(),
+    def create_superuser(self, username, email, password, **extra_fields):
+        username = uuid.uuid4() if username is None else username
+
+        return super().create_superuser(
+            username=username,
             email=email,
             password=password,
             **extra_fields
@@ -95,6 +99,13 @@ class User(AbstractUser):
             (date.month, date.day) < (self.date_of_birth.month, self.date_of_birth.day)
         )
     age.short_description = 'Age'
+
+    def get_absolute_url(self):
+        return f"/users/{self.username}/"
+
+    def __str__(self):
+        """Unicode representation of User."""
+        return self.username
 
 
 class ContactEmail(models.Model):

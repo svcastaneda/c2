@@ -85,3 +85,11 @@ docker-compose -f local.yml run --rm django python manage.py migrate
 docker-compose -f local.yml run --rm django python manage.py startapp APP_NAME
 
 ```
+
+---
+
+## Testing
+
+```bash
+docker-compose -f local.yml run --rm django python manage.py test
+```
