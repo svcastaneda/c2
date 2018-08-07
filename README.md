@@ -23,8 +23,8 @@ git remote add upstream git@github.com:CoderDojoChi/c2.git
 git remote set-url --push upstream DISABLE
 
 # Build and run docker
-docker-compose build
-docker-compose up
+docker-compose -f local.yml build
+docker-compose -f local.yml up
 ```
 
 ---
@@ -33,14 +33,14 @@ docker-compose up
 
 ```bash
 # Running with log output
-docker-compose up
+docker-compose -f local.yml up
 
 # Running daemon mode (in the background)
-docker-compose up -d
+docker-compose -f local.yml up -d
 
 # Attaching a log output to already-running process
-docker-compose logs web
-docker-compose logs db
+docker-compose -f local.yml logs django
+docker-compose -f local.yml logs postgres
 ```
 
 Load the website via [localhost:8000](http://localhost:8000) and going to [/admin/](http://localhost:8000/admin). The debug admin login info is:
@@ -56,54 +56,40 @@ For a full list of management options, start the app, then create a shell into t
 
 ```bash
 # In one window
-docker-compose up
+docker-compose -f local.yml up
 
 # In another window
-docker-compose run --rm web bash
+docker-compose -f local.yml run --rm django bash
 invoke --list
 ```
 
 ---
 
 ## Adding Dependencies
-```bash
-docker-compose run --rm web pipenv install PACKAGENAME
-```
+Add the pip requirement to the appropriate file in `requirements/*.txt` (most likely `base.txt`).
 
 ---
 
 ## Migrations
 ```bash
 # Create migrations
-docker-compose run --rm web python manage.py makemigrations
+docker-compose -f local.yml run --rm django python manage.py makemigrations
 
 # Save a single app's model as fixtures
-docker-compose run --rm web python manage.py dumpdata APP.MODEL > web/APP/fixtures/MODEL.json
+docker-compose -f local.yml run --rm django python manage.py dumpdata APP.MODEL > coderdojochi/APP/fixtures/MODEL.json
 
 # Run Migrations
-docker-compose run --rm web python manage.py migrate
+docker-compose -f local.yml run --rm django python manage.py migrate
 
 # Create a new app
-docker-compose run --rm web python manage.py startapp APP_NAME
+docker-compose -f local.yml run --rm django python manage.py startapp APP_NAME
 
 ```
 
 ---
 
 ## Testing
+
 ```bash
-# Run all tests
-docker-compose run --rm web invoke test
-
-# Run test for <app>
-docker-compose run --rm web invoke test -a <app>
-
-# Example for 'account' app
-docker-compose run --rm web invoke test -a account
-```
-
----
-
-## Deployment
-```bash
+docker-compose -f local.yml run --rm django python manage.py test
 ```
